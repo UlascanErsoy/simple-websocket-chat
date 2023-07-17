@@ -1,7 +1,9 @@
 <script lang="ts">
     import { writable } from 'svelte/store';
-    let username = "ulascan";
-    let hostname = "127.0.0.1:3001";
+    let username = "Mister Burak";
+
+    let uri = document.location.host.split(":")[0]; 
+    let hostname = `${uri}:3001`;
     let message = "";
     let socket = null;
 
